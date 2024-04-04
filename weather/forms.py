@@ -1,6 +1,8 @@
 from django import forms
+"""from .models import WeatherEntity"""
 
 class WeatherForm(forms.Form):
+    """class Meta:"""
     temperature = forms.FloatField(label='Temperatura')
     date = forms.DateTimeField(label='Data')
     city = forms.CharField(label='Cidade', required=False)
